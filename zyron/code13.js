@@ -318,6 +318,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects1
 gdjs.copyArray(runtimeScene.getObjects("derecha"), gdjs.sala10Code.GDderechaObjects1);
 gdjs.copyArray(runtimeScene.getObjects("derecha2"), gdjs.sala10Code.GDderecha2Objects1);
 gdjs.copyArray(runtimeScene.getObjects("izquierda"), gdjs.sala10Code.GDizquierdaObjects1);
+gdjs.copyArray(runtimeScene.getObjects("personaje"), gdjs.sala10Code.GDpersonajeObjects1);
 gdjs.copyArray(runtimeScene.getObjects("puzzle"), gdjs.sala10Code.GDpuzzleObjects1);
 {for(var i = 0, len = gdjs.sala10Code.GDcargaObjects1.length ;i < len;++i) {
     gdjs.sala10Code.GDcargaObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Backward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -335,6 +336,9 @@ gdjs.copyArray(runtimeScene.getObjects("puzzle"), gdjs.sala10Code.GDpuzzleObject
     gdjs.sala10Code.GDderecha2Objects1[i].getBehavior("Animation").pauseAnimation();
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(gdjs.random(2));
+}{for(var i = 0, len = gdjs.sala10Code.GDpersonajeObjects1.length ;i < len;++i) {
+    gdjs.sala10Code.GDpersonajeObjects1[i].getBehavior("Flippable").flipX(true);
+}
 }}
 
 }
@@ -457,8 +461,8 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects4});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects4Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala10Code.GDpuertaizquierdaObjects4});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects3Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala10Code.GDpuertaizquierdaObjects3});
 gdjs.sala10Code.asyncCallback38930852 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
@@ -480,30 +484,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects3Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala10Code.GDpuertaizquierdaObjects3});
-gdjs.sala10Code.asyncCallback38934996 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList11 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback38934996(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList12 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -707,46 +688,6 @@ gdjs.sala10Code.eventsList9(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaizquierdaObjects3, gdjs.sala10Code.GDpuertaizquierdaObjects4);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects4Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
-gdjs.copyArray(gdjs.sala10Code.GDizquierdaObjects3, gdjs.sala10Code.GDizquierdaObjects4);
-
-{for(var i = 0, len = gdjs.sala10Code.GDizquierdaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDizquierdaObjects4[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList10(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 /* Reuse gdjs.sala10Code.GDpersonajeObjects3 */
 /* Reuse gdjs.sala10Code.GDpuertaizquierdaObjects3 */
 
@@ -760,7 +701,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -776,7 +717,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList11(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList10(runtimeScene);} //End of subevents
 }
 
 }
@@ -791,7 +732,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList13 = function(runtimeScene) {
+gdjs.sala10Code.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -814,7 +755,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList14 = function(runtimeScene) {
+gdjs.sala10Code.eventsList13 = function(runtimeScene) {
 
 {
 
@@ -837,7 +778,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList15 = function(runtimeScene) {
+gdjs.sala10Code.eventsList14 = function(runtimeScene) {
 
 {
 
@@ -860,7 +801,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList16 = function(runtimeScene) {
+gdjs.sala10Code.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -883,7 +824,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList17 = function(runtimeScene) {
+gdjs.sala10Code.eventsList16 = function(runtimeScene) {
 
 {
 
@@ -899,14 +840,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects4});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects4Objects = Hashtable.newFrom({"puzzleC": gdjs.sala10Code.GDpuzzleCObjects4});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects3Objects = Hashtable.newFrom({"puzzleC": gdjs.sala10Code.GDpuzzleCObjects3});
 gdjs.sala10Code.asyncCallback38959196 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList18 = function(runtimeScene) {
+gdjs.sala10Code.eventsList17 = function(runtimeScene) {
 
 {
 
@@ -922,30 +863,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects3Objects = Hashtable.newFrom({"puzzleC": gdjs.sala10Code.GDpuzzleCObjects3});
-gdjs.sala10Code.asyncCallback38963028 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList19 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback38963028(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList20 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -965,6 +883,46 @@ isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 1;
+}
+}
+isConditionTrue_0 = isConditionTrue_1;
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
+gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects3, gdjs.sala10Code.GDpuzzleObjects4);
+
+{for(var i = 0, len = gdjs.sala10Code.GDpuzzleObjects4.length ;i < len;++i) {
+    gdjs.sala10Code.GDpuzzleObjects4[i].getBehavior("Animation").resumeAnimation();
+}
+}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
+    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.sala10Code.eventsList12(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
+
+gdjs.copyArray(gdjs.sala10Code.GDpuzzleCObjects3, gdjs.sala10Code.GDpuzzleCObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects4Objects, false, runtimeScene, false);
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 2;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1004,7 +962,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 2;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 3;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1044,7 +1002,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 3;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 4;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1084,7 +1042,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 4;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 5;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1109,86 +1067,6 @@ gdjs.sala10Code.eventsList16(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuzzleCObjects3, gdjs.sala10Code.GDpuzzleCObjects4);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects4Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 5;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
-gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects3, gdjs.sala10Code.GDpuzzleObjects4);
-
-{for(var i = 0, len = gdjs.sala10Code.GDpuzzleObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDpuzzleObjects4[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList17(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuzzleCObjects3, gdjs.sala10Code.GDpuzzleCObjects4);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects4Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
-gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects3, gdjs.sala10Code.GDpuzzleObjects4);
-
-{for(var i = 0, len = gdjs.sala10Code.GDpuzzleObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDpuzzleObjects4[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList18(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 /* Reuse gdjs.sala10Code.GDpersonajeObjects3 */
 /* Reuse gdjs.sala10Code.GDpuzzleCObjects3 */
 
@@ -1202,7 +1080,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1218,7 +1096,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList19(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
@@ -1233,7 +1111,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList21 = function(runtimeScene) {
+gdjs.sala10Code.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -1256,7 +1134,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList22 = function(runtimeScene) {
+gdjs.sala10Code.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -1279,7 +1157,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList23 = function(runtimeScene) {
+gdjs.sala10Code.eventsList21 = function(runtimeScene) {
 
 {
 
@@ -1302,7 +1180,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList24 = function(runtimeScene) {
+gdjs.sala10Code.eventsList22 = function(runtimeScene) {
 
 {
 
@@ -1325,7 +1203,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList25 = function(runtimeScene) {
+gdjs.sala10Code.eventsList23 = function(runtimeScene) {
 
 {
 
@@ -1341,14 +1219,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects4});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects4Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala10Code.GDpuertaderechaObjects4});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala10Code.GDpuertaderechaObjects3});
 gdjs.sala10Code.asyncCallback38989172 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList26 = function(runtimeScene) {
+gdjs.sala10Code.eventsList24 = function(runtimeScene) {
 
 {
 
@@ -1364,30 +1242,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala10Code.GDpuertaderechaObjects3});
-gdjs.sala10Code.asyncCallback38993316 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList27 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback38993316(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList28 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -1407,6 +1262,86 @@ isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 1;
+}
+}
+isConditionTrue_0 = isConditionTrue_1;
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
+gdjs.copyArray(gdjs.sala10Code.GDderechaObjects3, gdjs.sala10Code.GDderechaObjects4);
+
+{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects4.length ;i < len;++i) {
+    gdjs.sala10Code.GDderechaObjects4[i].getBehavior("Animation").resumeAnimation();
+}
+}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
+    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.sala10Code.eventsList19(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
+
+gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects3, gdjs.sala10Code.GDpuertaderechaObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects4Objects, false, runtimeScene, false);
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 2;
+}
+}
+isConditionTrue_0 = isConditionTrue_1;
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
+gdjs.copyArray(gdjs.sala10Code.GDderechaObjects3, gdjs.sala10Code.GDderechaObjects4);
+
+{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects4.length ;i < len;++i) {
+    gdjs.sala10Code.GDderechaObjects4[i].getBehavior("Animation").resumeAnimation();
+}
+}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
+    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.sala10Code.eventsList20(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
+
+gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects3, gdjs.sala10Code.GDpuertaderechaObjects4);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects4Objects, false, runtimeScene, false);
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 3;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1446,7 +1381,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 2;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 4;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1486,7 +1421,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 3;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 5;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1511,126 +1446,6 @@ gdjs.sala10Code.eventsList23(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects3, gdjs.sala10Code.GDpuertaderechaObjects4);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects4Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 4;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects3, gdjs.sala10Code.GDderechaObjects4);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects4[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList24(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects3, gdjs.sala10Code.GDpuertaderechaObjects4);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects4Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 5;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects3, gdjs.sala10Code.GDderechaObjects4);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects4[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList25(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects3, gdjs.sala10Code.GDpersonajeObjects4);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects3, gdjs.sala10Code.GDpuertaderechaObjects4);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects4Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects4Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects4);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects3, gdjs.sala10Code.GDderechaObjects4);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects4[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects4.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects4[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList26(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 /* Reuse gdjs.sala10Code.GDpersonajeObjects3 */
 /* Reuse gdjs.sala10Code.GDpuertaderechaObjects3 */
 
@@ -1644,7 +1459,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1660,7 +1475,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList27(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
@@ -1675,7 +1490,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "final", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList29 = function(runtimeScene) {
+gdjs.sala10Code.eventsList26 = function(runtimeScene) {
 
 {
 
@@ -1691,7 +1506,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.eventsList30 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList27 = function(runtimeScene) {
 
 {
 
@@ -1720,7 +1535,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList29(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList26(runtimeScene);} //End of subevents
 }
 
 }
@@ -1735,7 +1550,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList31 = function(runtimeScene) {
+gdjs.sala10Code.eventsList28 = function(runtimeScene) {
 
 {
 
@@ -1758,7 +1573,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList32 = function(runtimeScene) {
+gdjs.sala10Code.eventsList29 = function(runtimeScene) {
 
 {
 
@@ -1781,7 +1596,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList33 = function(runtimeScene) {
+gdjs.sala10Code.eventsList30 = function(runtimeScene) {
 
 {
 
@@ -1804,7 +1619,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList34 = function(runtimeScene) {
+gdjs.sala10Code.eventsList31 = function(runtimeScene) {
 
 {
 
@@ -1827,7 +1642,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList35 = function(runtimeScene) {
+gdjs.sala10Code.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -1843,14 +1658,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects3Objects = Hashtable.newFrom({"casillero2": gdjs.sala10Code.GDcasillero2Objects3});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects2Objects = Hashtable.newFrom({"casillero2": gdjs.sala10Code.GDcasillero2Objects2});
 gdjs.sala10Code.asyncCallback39030228 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList36 = function(runtimeScene) {
+gdjs.sala10Code.eventsList33 = function(runtimeScene) {
 
 {
 
@@ -1866,30 +1681,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects2Objects = Hashtable.newFrom({"casillero2": gdjs.sala10Code.GDcasillero2Objects2});
-gdjs.sala10Code.asyncCallback39033820 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList37 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback39033820(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList38 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList34 = function(runtimeScene) {
 
 {
 
@@ -1925,7 +1717,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList31(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList28(runtimeScene);} //End of subevents
 }
 
 }
@@ -1965,7 +1757,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList32(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList29(runtimeScene);} //End of subevents
 }
 
 }
@@ -2005,7 +1797,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList33(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList30(runtimeScene);} //End of subevents
 }
 
 }
@@ -2045,7 +1837,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList34(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList31(runtimeScene);} //End of subevents
 }
 
 }
@@ -2085,47 +1877,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList35(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDcasillero2Objects2, gdjs.sala10Code.GDcasillero2Objects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Objects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderecha2Objects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDderecha2Objects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList36(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList32(runtimeScene);} //End of subevents
 }
 
 }
@@ -2146,7 +1898,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -2162,13 +1914,13 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects2
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList37(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList33(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala10Code.eventsList39 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList35 = function(runtimeScene) {
 
 {
 
@@ -2183,10 +1935,10 @@ gdjs.copyArray(runtimeScene.getObjects("izquierda"), gdjs.sala10Code.GDizquierda
 {for(var i = 0, len = gdjs.sala10Code.GDizquierdaObjects3.length ;i < len;++i) {
     gdjs.sala10Code.GDizquierdaObjects3[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(10));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList12(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList11(runtimeScene);} //End of subevents
 }
 
 }
@@ -2205,10 +1957,10 @@ gdjs.copyArray(runtimeScene.getObjects("puzzle"), gdjs.sala10Code.GDpuzzleObject
 {for(var i = 0, len = gdjs.sala10Code.GDpuzzleObjects3.length ;i < len;++i) {
     gdjs.sala10Code.GDpuzzleObjects3[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList20(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -2227,10 +1979,10 @@ gdjs.copyArray(runtimeScene.getObjects("derecha"), gdjs.sala10Code.GDderechaObje
 {for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
     gdjs.sala10Code.GDderechaObjects3[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList28(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList25(runtimeScene);} //End of subevents
 }
 
 }
@@ -2279,7 +2031,7 @@ gdjs.copyArray(runtimeScene.getObjects("derecha2"), gdjs.sala10Code.GDderecha2Ob
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList30(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList27(runtimeScene);} //End of subevents
 }
 
 }
@@ -2346,10 +2098,10 @@ gdjs.copyArray(runtimeScene.getObjects("derecha2"), gdjs.sala10Code.GDderecha2Ob
 {for(var i = 0, len = gdjs.sala10Code.GDderecha2Objects2.length ;i < len;++i) {
     gdjs.sala10Code.GDderecha2Objects2[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList38(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList34(runtimeScene);} //End of subevents
 }
 
 }
@@ -2364,7 +2116,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList40 = function(runtimeScene) {
+gdjs.sala10Code.eventsList36 = function(runtimeScene) {
 
 {
 
@@ -2387,7 +2139,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList41 = function(runtimeScene) {
+gdjs.sala10Code.eventsList37 = function(runtimeScene) {
 
 {
 
@@ -2410,7 +2162,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList42 = function(runtimeScene) {
+gdjs.sala10Code.eventsList38 = function(runtimeScene) {
 
 {
 
@@ -2433,7 +2185,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList43 = function(runtimeScene) {
+gdjs.sala10Code.eventsList39 = function(runtimeScene) {
 
 {
 
@@ -2456,7 +2208,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList44 = function(runtimeScene) {
+gdjs.sala10Code.eventsList40 = function(runtimeScene) {
 
 {
 
@@ -2472,14 +2224,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala10Code.GDpuertaderechaObjects3});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects2Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala10Code.GDpuertaderechaObjects2});
 gdjs.sala10Code.asyncCallback39060476 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList45 = function(runtimeScene) {
+gdjs.sala10Code.eventsList41 = function(runtimeScene) {
 
 {
 
@@ -2495,30 +2247,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects2Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala10Code.GDpuertaderechaObjects2});
-gdjs.sala10Code.asyncCallback39064620 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList46 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback39064620(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList47 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList42 = function(runtimeScene) {
 
 {
 
@@ -2538,6 +2267,166 @@ isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 1;
+}
+}
+isConditionTrue_0 = isConditionTrue_1;
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
+gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
+
+{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
+}
+}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.sala10Code.eventsList36(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
+
+gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 2;
+}
+}
+isConditionTrue_0 = isConditionTrue_1;
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
+gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
+
+{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
+}
+}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.sala10Code.eventsList37(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
+
+gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 3;
+}
+}
+isConditionTrue_0 = isConditionTrue_1;
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
+gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
+
+{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
+}
+}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.sala10Code.eventsList38(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
+
+gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 4;
+}
+}
+isConditionTrue_0 = isConditionTrue_1;
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
+gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
+
+{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
+}
+}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
+    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}
+{ //Subevents
+gdjs.sala10Code.eventsList39(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
+
+gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 5;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -2562,206 +2451,6 @@ gdjs.sala10Code.eventsList40(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 2;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList41(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 3;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList42(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 4;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList43(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 5;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList44(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaderechaObjects2, gdjs.sala10Code.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDderechaObjects2, gdjs.sala10Code.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList45(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 /* Reuse gdjs.sala10Code.GDpersonajeObjects2 */
 /* Reuse gdjs.sala10Code.GDpuertaderechaObjects2 */
 
@@ -2775,7 +2464,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -2791,7 +2480,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects2
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList46(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList41(runtimeScene);} //End of subevents
 }
 
 }
@@ -2806,7 +2495,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList48 = function(runtimeScene) {
+gdjs.sala10Code.eventsList43 = function(runtimeScene) {
 
 {
 
@@ -2829,7 +2518,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList49 = function(runtimeScene) {
+gdjs.sala10Code.eventsList44 = function(runtimeScene) {
 
 {
 
@@ -2852,7 +2541,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList50 = function(runtimeScene) {
+gdjs.sala10Code.eventsList45 = function(runtimeScene) {
 
 {
 
@@ -2875,7 +2564,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList51 = function(runtimeScene) {
+gdjs.sala10Code.eventsList46 = function(runtimeScene) {
 
 {
 
@@ -2898,7 +2587,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList52 = function(runtimeScene) {
+gdjs.sala10Code.eventsList47 = function(runtimeScene) {
 
 {
 
@@ -2914,14 +2603,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects3Objects = Hashtable.newFrom({"puzzleC": gdjs.sala10Code.GDpuzzleCObjects3});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects2Objects = Hashtable.newFrom({"puzzleC": gdjs.sala10Code.GDpuzzleCObjects2});
 gdjs.sala10Code.asyncCallback39088820 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList53 = function(runtimeScene) {
+gdjs.sala10Code.eventsList48 = function(runtimeScene) {
 
 {
 
@@ -2937,30 +2626,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects2Objects = Hashtable.newFrom({"puzzleC": gdjs.sala10Code.GDpuzzleCObjects2});
-gdjs.sala10Code.asyncCallback39092652 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList54 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback39092652(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList55 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList49 = function(runtimeScene) {
 
 {
 
@@ -2996,7 +2662,7 @@ gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects2, gdjs.sala10Code.GDpuzzleObjects
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList48(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList43(runtimeScene);} //End of subevents
 }
 
 }
@@ -3036,7 +2702,7 @@ gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects2, gdjs.sala10Code.GDpuzzleObjects
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList49(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList44(runtimeScene);} //End of subevents
 }
 
 }
@@ -3076,7 +2742,7 @@ gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects2, gdjs.sala10Code.GDpuzzleObjects
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList50(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList45(runtimeScene);} //End of subevents
 }
 
 }
@@ -3116,7 +2782,7 @@ gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects2, gdjs.sala10Code.GDpuzzleObjects
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList51(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList46(runtimeScene);} //End of subevents
 }
 
 }
@@ -3156,47 +2822,7 @@ gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects2, gdjs.sala10Code.GDpuzzleObjects
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList52(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuzzleCObjects2, gdjs.sala10Code.GDpuzzleCObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuzzleCObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDpuzzleObjects2, gdjs.sala10Code.GDpuzzleObjects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDpuzzleObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDpuzzleObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList53(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList47(runtimeScene);} //End of subevents
 }
 
 }
@@ -3217,7 +2843,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -3233,7 +2859,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects2
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList54(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList48(runtimeScene);} //End of subevents
 }
 
 }
@@ -3248,7 +2874,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList56 = function(runtimeScene) {
+gdjs.sala10Code.eventsList50 = function(runtimeScene) {
 
 {
 
@@ -3271,7 +2897,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList57 = function(runtimeScene) {
+gdjs.sala10Code.eventsList51 = function(runtimeScene) {
 
 {
 
@@ -3294,7 +2920,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList58 = function(runtimeScene) {
+gdjs.sala10Code.eventsList52 = function(runtimeScene) {
 
 {
 
@@ -3317,7 +2943,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList59 = function(runtimeScene) {
+gdjs.sala10Code.eventsList53 = function(runtimeScene) {
 
 {
 
@@ -3340,7 +2966,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList60 = function(runtimeScene) {
+gdjs.sala10Code.eventsList54 = function(runtimeScene) {
 
 {
 
@@ -3356,14 +2982,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects3});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects3Objects = Hashtable.newFrom({"casillero2": gdjs.sala10Code.GDcasillero2Objects3});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects2Objects = Hashtable.newFrom({"casillero2": gdjs.sala10Code.GDcasillero2Objects2});
 gdjs.sala10Code.asyncCallback39116764 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList61 = function(runtimeScene) {
+gdjs.sala10Code.eventsList55 = function(runtimeScene) {
 
 {
 
@@ -3379,30 +3005,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects2Objects = Hashtable.newFrom({"casillero2": gdjs.sala10Code.GDcasillero2Objects2});
-gdjs.sala10Code.asyncCallback39120596 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList62 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback39120596(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList63 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList56 = function(runtimeScene) {
 
 {
 
@@ -3438,7 +3041,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList56(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList50(runtimeScene);} //End of subevents
 }
 
 }
@@ -3478,7 +3081,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList57(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList51(runtimeScene);} //End of subevents
 }
 
 }
@@ -3518,7 +3121,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList58(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList52(runtimeScene);} //End of subevents
 }
 
 }
@@ -3558,7 +3161,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList59(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList53(runtimeScene);} //End of subevents
 }
 
 }
@@ -3598,47 +3201,7 @@ gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Obj
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList60(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDcasillero2Objects2, gdjs.sala10Code.GDcasillero2Objects3);
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects2, gdjs.sala10Code.GDpersonajeObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects3Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDcasillero2Objects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala10Code.GDderecha2Objects2, gdjs.sala10Code.GDderecha2Objects3);
-
-{for(var i = 0, len = gdjs.sala10Code.GDderecha2Objects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDderecha2Objects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList61(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList54(runtimeScene);} //End of subevents
 }
 
 }
@@ -3659,7 +3222,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -3675,7 +3238,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects2
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList62(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList55(runtimeScene);} //End of subevents
 }
 
 }
@@ -3690,7 +3253,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "final", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList64 = function(runtimeScene) {
+gdjs.sala10Code.eventsList57 = function(runtimeScene) {
 
 {
 
@@ -3706,7 +3269,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.eventsList65 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList58 = function(runtimeScene) {
 
 {
 
@@ -3735,7 +3298,7 @@ gdjs.copyArray(runtimeScene.getObjects("derecha"), gdjs.sala10Code.GDderechaObje
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList64(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList57(runtimeScene);} //End of subevents
 }
 
 }
@@ -3750,7 +3313,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList66 = function(runtimeScene) {
+gdjs.sala10Code.eventsList59 = function(runtimeScene) {
 
 {
 
@@ -3773,7 +3336,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList67 = function(runtimeScene) {
+gdjs.sala10Code.eventsList60 = function(runtimeScene) {
 
 {
 
@@ -3796,7 +3359,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList68 = function(runtimeScene) {
+gdjs.sala10Code.eventsList61 = function(runtimeScene) {
 
 {
 
@@ -3819,7 +3382,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList69 = function(runtimeScene) {
+gdjs.sala10Code.eventsList62 = function(runtimeScene) {
 
 {
 
@@ -3842,7 +3405,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList70 = function(runtimeScene) {
+gdjs.sala10Code.eventsList63 = function(runtimeScene) {
 
 {
 
@@ -3858,14 +3421,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects2});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects2Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala10Code.GDpuertaizquierdaObjects2});
+};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects1Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects1});
+gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects1Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala10Code.GDpuertaizquierdaObjects1});
 gdjs.sala10Code.asyncCallback39159988 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6D", false);
 }gdjs.sala10Code.localVariables.length = 0;
 }
-gdjs.sala10Code.eventsList71 = function(runtimeScene) {
+gdjs.sala10Code.eventsList64 = function(runtimeScene) {
 
 {
 
@@ -3881,30 +3444,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects1Objects = Hashtable.newFrom({"personaje": gdjs.sala10Code.GDpersonajeObjects1});
-gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects1Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala10Code.GDpuertaizquierdaObjects1});
-gdjs.sala10Code.asyncCallback39164028 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala10Code.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
-}gdjs.sala10Code.localVariables.length = 0;
-}
-gdjs.sala10Code.eventsList72 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala10Code.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala10Code.asyncCallback39164028(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala10Code.eventsList73 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList65 = function(runtimeScene) {
 
 {
 
@@ -3940,7 +3480,7 @@ gdjs.copyArray(gdjs.sala10Code.GDizquierdaObjects1, gdjs.sala10Code.GDizquierdaO
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList66(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList59(runtimeScene);} //End of subevents
 }
 
 }
@@ -3980,7 +3520,7 @@ gdjs.copyArray(gdjs.sala10Code.GDizquierdaObjects1, gdjs.sala10Code.GDizquierdaO
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList67(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList60(runtimeScene);} //End of subevents
 }
 
 }
@@ -4020,7 +3560,7 @@ gdjs.copyArray(gdjs.sala10Code.GDizquierdaObjects1, gdjs.sala10Code.GDizquierdaO
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList68(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList61(runtimeScene);} //End of subevents
 }
 
 }
@@ -4060,7 +3600,7 @@ gdjs.copyArray(gdjs.sala10Code.GDizquierdaObjects1, gdjs.sala10Code.GDizquierdaO
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList69(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList62(runtimeScene);} //End of subevents
 }
 
 }
@@ -4100,47 +3640,7 @@ gdjs.copyArray(gdjs.sala10Code.GDizquierdaObjects1, gdjs.sala10Code.GDizquierdaO
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList70(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala10Code.GDpersonajeObjects1, gdjs.sala10Code.GDpersonajeObjects2);
-
-gdjs.copyArray(gdjs.sala10Code.GDpuertaizquierdaObjects1, gdjs.sala10Code.GDpuertaizquierdaObjects2);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpersonajeObjects2Objects, gdjs.sala10Code.mapOfGDgdjs_9546sala10Code_9546GDpuertaizquierdaObjects2Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects2);
-gdjs.copyArray(gdjs.sala10Code.GDizquierdaObjects1, gdjs.sala10Code.GDizquierdaObjects2);
-
-{for(var i = 0, len = gdjs.sala10Code.GDizquierdaObjects2.length ;i < len;++i) {
-    gdjs.sala10Code.GDizquierdaObjects2[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala10Code.GDcargaObjects2.length ;i < len;++i) {
-    gdjs.sala10Code.GDcargaObjects2[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala10Code.eventsList71(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList63(runtimeScene);} //End of subevents
 }
 
 }
@@ -4161,7 +3661,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 6;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -4177,13 +3677,13 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala10Code.GDcargaObjects1
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList72(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList64(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala10Code.eventsList74 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList66 = function(runtimeScene) {
 
 {
 
@@ -4198,10 +3698,10 @@ gdjs.copyArray(runtimeScene.getObjects("derecha"), gdjs.sala10Code.GDderechaObje
 {for(var i = 0, len = gdjs.sala10Code.GDderechaObjects2.length ;i < len;++i) {
     gdjs.sala10Code.GDderechaObjects2[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList47(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList42(runtimeScene);} //End of subevents
 }
 
 }
@@ -4220,10 +3720,10 @@ gdjs.copyArray(runtimeScene.getObjects("puzzle"), gdjs.sala10Code.GDpuzzleObject
 {for(var i = 0, len = gdjs.sala10Code.GDpuzzleObjects2.length ;i < len;++i) {
     gdjs.sala10Code.GDpuzzleObjects2[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList55(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList49(runtimeScene);} //End of subevents
 }
 
 }
@@ -4242,10 +3742,10 @@ gdjs.copyArray(runtimeScene.getObjects("derecha2"), gdjs.sala10Code.GDderecha2Ob
 {for(var i = 0, len = gdjs.sala10Code.GDderecha2Objects2.length ;i < len;++i) {
     gdjs.sala10Code.GDderecha2Objects2[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList63(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList56(runtimeScene);} //End of subevents
 }
 
 }
@@ -4294,7 +3794,7 @@ gdjs.copyArray(runtimeScene.getObjects("izquierda"), gdjs.sala10Code.GDizquierda
 }
 }
 { //Subevents
-gdjs.sala10Code.eventsList65(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList58(runtimeScene);} //End of subevents
 }
 
 }
@@ -4361,16 +3861,16 @@ gdjs.copyArray(runtimeScene.getObjects("izquierda"), gdjs.sala10Code.GDizquierda
 {for(var i = 0, len = gdjs.sala10Code.GDizquierdaObjects1.length ;i < len;++i) {
     gdjs.sala10Code.GDizquierdaObjects1[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(10));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(6));
 }
 { //Subevents
-gdjs.sala10Code.eventsList73(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList65(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala10Code.eventsList75 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList67 = function(runtimeScene) {
 
 {
 
@@ -4381,7 +3881,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGam
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.sala10Code.eventsList39(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList35(runtimeScene);} //End of subevents
 }
 
 }
@@ -4396,13 +3896,13 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGam
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.sala10Code.eventsList74(runtimeScene);} //End of subevents
+gdjs.sala10Code.eventsList66(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala10Code.eventsList76 = function(runtimeScene) {
+};gdjs.sala10Code.eventsList68 = function(runtimeScene) {
 
 {
 
@@ -4571,7 +4071,7 @@ gdjs.sala10Code.eventsList4(runtimeScene);
 {
 
 
-gdjs.sala10Code.eventsList75(runtimeScene);
+gdjs.sala10Code.eventsList67(runtimeScene);
 }
 
 
@@ -4661,7 +4161,7 @@ gdjs.sala10Code.GDperdisteObjects3.length = 0;
 gdjs.sala10Code.GDperdisteObjects4.length = 0;
 gdjs.sala10Code.GDperdisteObjects5.length = 0;
 
-gdjs.sala10Code.eventsList76(runtimeScene);
+gdjs.sala10Code.eventsList68(runtimeScene);
 gdjs.sala10Code.GDsala1Objects1.length = 0;
 gdjs.sala10Code.GDsala1Objects2.length = 0;
 gdjs.sala10Code.GDsala1Objects3.length = 0;
