@@ -630,83 +630,14 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects3});
-gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaizquierdaObjects3Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala2DCode.GDpuertaizquierdaObjects3});
-gdjs.sala2DCode.asyncCallback39252548 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala7D", false);
-}gdjs.sala2DCode.localVariables.length = 0;
-}
-gdjs.sala2DCode.eventsList11 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala2DCode.asyncCallback39252548(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects3});
-gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaizquierdaObjects3Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala2DCode.GDpuertaizquierdaObjects3});
-gdjs.sala2DCode.asyncCallback39256588 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala8D", false);
-}gdjs.sala2DCode.localVariables.length = 0;
-}
-gdjs.sala2DCode.eventsList12 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala2DCode.asyncCallback39256588(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects3});
-gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaizquierdaObjects3Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala2DCode.GDpuertaizquierdaObjects3});
-gdjs.sala2DCode.asyncCallback39260628 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala9D", false);
-}gdjs.sala2DCode.localVariables.length = 0;
-}
-gdjs.sala2DCode.eventsList13 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala2DCode.asyncCallback39260628(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
 };gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects2});
 gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaizquierdaObjects2Objects = Hashtable.newFrom({"puertaizquierda": gdjs.sala2DCode.GDpuertaizquierdaObjects2});
 gdjs.sala2DCode.asyncCallback39264732 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10D", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList14 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -722,7 +653,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala2DCode.eventsList15 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -966,126 +897,6 @@ gdjs.sala2DCode.eventsList10(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(gdjs.sala2DCode.GDpersonajeObjects2, gdjs.sala2DCode.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala2DCode.GDpuertaizquierdaObjects2, gdjs.sala2DCode.GDpuertaizquierdaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects, gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaizquierdaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala2DCode.GDizquierdaObjects2, gdjs.sala2DCode.GDizquierdaObjects3);
-
-{for(var i = 0, len = gdjs.sala2DCode.GDizquierdaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDizquierdaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala2DCode.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala2DCode.eventsList11(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala2DCode.GDpersonajeObjects2, gdjs.sala2DCode.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala2DCode.GDpuertaizquierdaObjects2, gdjs.sala2DCode.GDpuertaizquierdaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects, gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaizquierdaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 8;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala2DCode.GDizquierdaObjects2, gdjs.sala2DCode.GDizquierdaObjects3);
-
-{for(var i = 0, len = gdjs.sala2DCode.GDizquierdaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDizquierdaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala2DCode.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala2DCode.eventsList12(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala2DCode.GDpersonajeObjects2, gdjs.sala2DCode.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala2DCode.GDpuertaizquierdaObjects2, gdjs.sala2DCode.GDpuertaizquierdaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects, gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaizquierdaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 9;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala2DCode.GDizquierdaObjects2, gdjs.sala2DCode.GDizquierdaObjects3);
-
-{for(var i = 0, len = gdjs.sala2DCode.GDizquierdaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDizquierdaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala2DCode.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala2DCode.eventsList13(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 /* Reuse gdjs.sala2DCode.GDpersonajeObjects2 */
 /* Reuse gdjs.sala2DCode.GDpuertaizquierdaObjects2 */
 
@@ -1099,7 +910,7 @@ isConditionTrue_1 = false;
 isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
 if (isConditionTrue_1) {
 isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 10;
+isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
 }
 }
 isConditionTrue_0 = isConditionTrue_1;
@@ -1115,7 +926,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects2
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList14(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList11(runtimeScene);} //End of subevents
 }
 
 }
@@ -1130,7 +941,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala1", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList16 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList13 = function(runtimeScene) {
 
 {
 
@@ -1153,7 +964,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala2", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList17 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList14 = function(runtimeScene) {
 
 {
 
@@ -1176,7 +987,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala3", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList18 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -1199,7 +1010,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList19 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList16 = function(runtimeScene) {
 
 {
 
@@ -1219,10 +1030,10 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects3Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala2DCode.GDpuertaderechaObjects3});
 gdjs.sala2DCode.asyncCallback39286684 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala4D", false);
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList20 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList17 = function(runtimeScene) {
 
 {
 
@@ -1245,7 +1056,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala6", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList21 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -1261,75 +1072,6 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects3});
-gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects3Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala2DCode.GDpuertaderechaObjects3});
-gdjs.sala2DCode.asyncCallback39295004 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala5D", false);
-}gdjs.sala2DCode.localVariables.length = 0;
-}
-gdjs.sala2DCode.eventsList22 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala2DCode.asyncCallback39295004(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects3});
-gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects3Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala2DCode.GDpuertaderechaObjects3});
-gdjs.sala2DCode.asyncCallback39299148 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala8", false);
-}gdjs.sala2DCode.localVariables.length = 0;
-}
-gdjs.sala2DCode.eventsList23 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala2DCode.asyncCallback39299148(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects3});
-gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects3Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala2DCode.GDpuertaderechaObjects3});
-gdjs.sala2DCode.asyncCallback39303292 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala9", false);
-}gdjs.sala2DCode.localVariables.length = 0;
-}
-gdjs.sala2DCode.eventsList24 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.sala2DCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.sala2DCode.asyncCallback39303292(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
 };gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects2Objects = Hashtable.newFrom({"personaje": gdjs.sala2DCode.GDpersonajeObjects2});
 gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects2Objects = Hashtable.newFrom({"puertaderecha": gdjs.sala2DCode.GDpuertaderechaObjects2});
 gdjs.sala2DCode.asyncCallback39307500 = function (runtimeScene, asyncObjectsList) {
@@ -1337,7 +1079,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "sala10", false);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList25 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -1353,7 +1095,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 }
 
 
-};gdjs.sala2DCode.eventsList26 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -1389,7 +1131,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjec
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList16(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
@@ -1429,7 +1171,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjec
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList17(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList14(runtimeScene);} //End of subevents
 }
 
 }
@@ -1469,7 +1211,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjec
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList18(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList15(runtimeScene);} //End of subevents
 }
 
 }
@@ -1509,7 +1251,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjec
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList19(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList16(runtimeScene);} //End of subevents
 }
 
 }
@@ -1549,7 +1291,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjec
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList20(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
@@ -1589,127 +1331,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjec
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList21(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala2DCode.GDpersonajeObjects2, gdjs.sala2DCode.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala2DCode.GDpuertaderechaObjects2, gdjs.sala2DCode.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects, gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 7;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala2DCode.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala2DCode.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala2DCode.eventsList22(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala2DCode.GDpersonajeObjects2, gdjs.sala2DCode.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala2DCode.GDpuertaderechaObjects2, gdjs.sala2DCode.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects, gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 8;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala2DCode.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala2DCode.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala2DCode.eventsList23(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-gdjs.copyArray(gdjs.sala2DCode.GDpersonajeObjects2, gdjs.sala2DCode.GDpersonajeObjects3);
-
-gdjs.copyArray(gdjs.sala2DCode.GDpuertaderechaObjects2, gdjs.sala2DCode.GDpuertaderechaObjects3);
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{let isConditionTrue_1 = false;
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpersonajeObjects3Objects, gdjs.sala2DCode.mapOfGDgdjs_9546sala2DCode_9546GDpuertaderechaObjects3Objects, false, runtimeScene, false);
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "e");
-if (isConditionTrue_1) {
-isConditionTrue_1 = false;
-isConditionTrue_1 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) == 9;
-}
-}
-isConditionTrue_0 = isConditionTrue_1;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects3);
-gdjs.copyArray(gdjs.sala2DCode.GDderechaObjects2, gdjs.sala2DCode.GDderechaObjects3);
-
-{for(var i = 0, len = gdjs.sala2DCode.GDderechaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDderechaObjects3[i].getBehavior("Animation").resumeAnimation();
-}
-}{for(var i = 0, len = gdjs.sala2DCode.GDcargaObjects3.length ;i < len;++i) {
-    gdjs.sala2DCode.GDcargaObjects3[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 2, "Flash", "Both", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-}
-{ //Subevents
-gdjs.sala2DCode.eventsList24(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -1746,7 +1368,7 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects2
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList25(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
@@ -1761,7 +1383,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(0);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList27 = function(runtimeScene, asyncObjectsList) {
+gdjs.sala2DCode.eventsList21 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -1788,10 +1410,10 @@ gdjs.copyArray(runtimeScene.getObjects("comienzopuzzle"), gdjs.sala2DCode.GDcomi
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList27(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.sala2DCode.eventsList21(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList28 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList22 = function(runtimeScene) {
 
 {
 
@@ -1807,7 +1429,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.sala2DCode.eventsList29 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList23 = function(runtimeScene) {
 
 {
 
@@ -1857,13 +1479,13 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects1
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList28(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala2DCode.eventsList30 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList24 = function(runtimeScene) {
 
 {
 
@@ -1885,10 +1507,10 @@ gdjs.copyArray(runtimeScene.getObjects("izquierda"), gdjs.sala2DCode.GDizquierda
 {for(var i = 0, len = gdjs.sala2DCode.GDizquierdaObjects2.length ;i < len;++i) {
     gdjs.sala2DCode.GDizquierdaObjects2[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(10));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
 }
 { //Subevents
-gdjs.sala2DCode.eventsList15(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
@@ -1907,10 +1529,10 @@ gdjs.copyArray(runtimeScene.getObjects("derecha"), gdjs.sala2DCode.GDderechaObje
 {for(var i = 0, len = gdjs.sala2DCode.GDderechaObjects2.length ;i < len;++i) {
     gdjs.sala2DCode.GDderechaObjects2[i].hide(false);
 }
-}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(10));
+}{runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(gdjs.random(7));
 }
 { //Subevents
-gdjs.sala2DCode.eventsList26(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 }
@@ -1939,7 +1561,7 @@ gdjs.copyArray(runtimeScene.getObjects("puzzle"), gdjs.sala2DCode.GDpuzzleObject
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList29(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 }
@@ -1950,7 +1572,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList31 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -1971,7 +1593,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList32 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList26 = function(runtimeScene) {
 
 {
 
@@ -1992,7 +1614,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList33 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList27 = function(runtimeScene) {
 
 {
 
@@ -2013,7 +1635,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList34 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList28 = function(runtimeScene) {
 
 {
 
@@ -2034,7 +1656,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList35 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList29 = function(runtimeScene) {
 
 {
 
@@ -2055,7 +1677,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList36 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList30 = function(runtimeScene) {
 
 {
 
@@ -2076,7 +1698,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList37 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList31 = function(runtimeScene) {
 
 {
 
@@ -2092,7 +1714,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.sala2DCode.eventsList38 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -2108,7 +1730,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascuboObjects2, gdjs.sala2DCode.GDformascub
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList31(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList25(runtimeScene);} //End of subevents
 }
 
 }
@@ -2128,7 +1750,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascuboObjects2, gdjs.sala2DCode.GDformascub
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList32(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList26(runtimeScene);} //End of subevents
 }
 
 }
@@ -2148,7 +1770,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascuboObjects2, gdjs.sala2DCode.GDformascub
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList33(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList27(runtimeScene);} //End of subevents
 }
 
 }
@@ -2168,7 +1790,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascuboObjects2, gdjs.sala2DCode.GDformascub
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList34(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 }
@@ -2188,7 +1810,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascuboObjects2, gdjs.sala2DCode.GDformascub
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList35(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList29(runtimeScene);} //End of subevents
 }
 
 }
@@ -2208,7 +1830,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascuboObjects2, gdjs.sala2DCode.GDformascub
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList36(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList30(runtimeScene);} //End of subevents
 }
 
 }
@@ -2227,7 +1849,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList37(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList31(runtimeScene);} //End of subevents
 }
 
 }
@@ -2238,7 +1860,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList39 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList33 = function(runtimeScene) {
 
 {
 
@@ -2259,7 +1881,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList40 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList34 = function(runtimeScene) {
 
 {
 
@@ -2280,7 +1902,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList41 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList35 = function(runtimeScene) {
 
 {
 
@@ -2301,7 +1923,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList42 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList36 = function(runtimeScene) {
 
 {
 
@@ -2322,7 +1944,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList43 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList37 = function(runtimeScene) {
 
 {
 
@@ -2343,7 +1965,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList44 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList38 = function(runtimeScene) {
 
 {
 
@@ -2364,7 +1986,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList45 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList39 = function(runtimeScene) {
 
 {
 
@@ -2380,7 +2002,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.sala2DCode.eventsList46 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList40 = function(runtimeScene) {
 
 {
 
@@ -2396,7 +2018,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo2Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList39(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList33(runtimeScene);} //End of subevents
 }
 
 }
@@ -2416,7 +2038,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo2Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList40(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList34(runtimeScene);} //End of subevents
 }
 
 }
@@ -2436,7 +2058,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo2Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList41(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList35(runtimeScene);} //End of subevents
 }
 
 }
@@ -2456,7 +2078,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo2Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList42(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList36(runtimeScene);} //End of subevents
 }
 
 }
@@ -2476,7 +2098,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo2Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList43(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList37(runtimeScene);} //End of subevents
 }
 
 }
@@ -2496,7 +2118,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo2Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList44(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList38(runtimeScene);} //End of subevents
 }
 
 }
@@ -2515,7 +2137,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList45(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList39(runtimeScene);} //End of subevents
 }
 
 }
@@ -2526,7 +2148,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList47 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList41 = function(runtimeScene) {
 
 {
 
@@ -2547,7 +2169,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList48 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList42 = function(runtimeScene) {
 
 {
 
@@ -2568,7 +2190,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList49 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList43 = function(runtimeScene) {
 
 {
 
@@ -2589,7 +2211,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList50 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList44 = function(runtimeScene) {
 
 {
 
@@ -2610,7 +2232,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList51 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList45 = function(runtimeScene) {
 
 {
 
@@ -2631,7 +2253,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList52 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList46 = function(runtimeScene) {
 
 {
 
@@ -2652,7 +2274,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList53 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList47 = function(runtimeScene) {
 
 {
 
@@ -2668,7 +2290,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.sala2DCode.eventsList54 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList48 = function(runtimeScene) {
 
 {
 
@@ -2684,7 +2306,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo3Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList47(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList41(runtimeScene);} //End of subevents
 }
 
 }
@@ -2704,7 +2326,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo3Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList48(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList42(runtimeScene);} //End of subevents
 }
 
 }
@@ -2724,7 +2346,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo3Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList49(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList43(runtimeScene);} //End of subevents
 }
 
 }
@@ -2744,7 +2366,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo3Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList50(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList44(runtimeScene);} //End of subevents
 }
 
 }
@@ -2764,7 +2386,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo3Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList51(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList45(runtimeScene);} //End of subevents
 }
 
 }
@@ -2784,7 +2406,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo3Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList52(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList46(runtimeScene);} //End of subevents
 }
 
 }
@@ -2803,7 +2425,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList53(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList47(runtimeScene);} //End of subevents
 }
 
 }
@@ -2814,7 +2436,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList55 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList49 = function(runtimeScene) {
 
 {
 
@@ -2835,7 +2457,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList56 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList50 = function(runtimeScene) {
 
 {
 
@@ -2856,7 +2478,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList57 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList51 = function(runtimeScene) {
 
 {
 
@@ -2877,7 +2499,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList58 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList52 = function(runtimeScene) {
 
 {
 
@@ -2898,7 +2520,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList59 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList53 = function(runtimeScene) {
 
 {
 
@@ -2919,7 +2541,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList60 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList54 = function(runtimeScene) {
 
 {
 
@@ -2940,7 +2562,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList61 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList55 = function(runtimeScene) {
 
 {
 
@@ -2956,7 +2578,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.sala2DCode.eventsList62 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList56 = function(runtimeScene) {
 
 {
 
@@ -2972,7 +2594,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo4Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList55(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList49(runtimeScene);} //End of subevents
 }
 
 }
@@ -2992,7 +2614,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo4Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList56(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList50(runtimeScene);} //End of subevents
 }
 
 }
@@ -3012,7 +2634,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo4Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList57(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList51(runtimeScene);} //End of subevents
 }
 
 }
@@ -3032,7 +2654,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo4Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList58(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList52(runtimeScene);} //End of subevents
 }
 
 }
@@ -3052,7 +2674,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo4Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList59(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList53(runtimeScene);} //End of subevents
 }
 
 }
@@ -3072,7 +2694,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo4Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList60(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList54(runtimeScene);} //End of subevents
 }
 
 }
@@ -3091,7 +2713,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList61(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList55(runtimeScene);} //End of subevents
 }
 
 }
@@ -3102,7 +2724,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList63 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList57 = function(runtimeScene) {
 
 {
 
@@ -3123,7 +2745,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList64 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList58 = function(runtimeScene) {
 
 {
 
@@ -3144,7 +2766,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList65 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList59 = function(runtimeScene) {
 
 {
 
@@ -3165,7 +2787,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList66 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList60 = function(runtimeScene) {
 
 {
 
@@ -3186,7 +2808,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList67 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList61 = function(runtimeScene) {
 
 {
 
@@ -3207,7 +2829,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList68 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList62 = function(runtimeScene) {
 
 {
 
@@ -3228,7 +2850,7 @@ asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables)
 {runtimeScene.getScene().getVariables().getFromIndex(2).add(1);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList69 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList63 = function(runtimeScene) {
 
 {
 
@@ -3244,7 +2866,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.sala2DCode.eventsList70 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList64 = function(runtimeScene) {
 
 {
 
@@ -3260,7 +2882,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo5Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList63(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList57(runtimeScene);} //End of subevents
 }
 
 }
@@ -3280,7 +2902,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo5Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList64(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList58(runtimeScene);} //End of subevents
 }
 
 }
@@ -3300,7 +2922,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo5Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList65(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList59(runtimeScene);} //End of subevents
 }
 
 }
@@ -3320,7 +2942,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo5Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList66(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList60(runtimeScene);} //End of subevents
 }
 
 }
@@ -3340,7 +2962,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo5Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList67(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList61(runtimeScene);} //End of subevents
 }
 
 }
@@ -3360,7 +2982,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDformascubo5Objects2, gdjs.sala2DCode.GDformascu
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList68(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList62(runtimeScene);} //End of subevents
 }
 
 }
@@ -3379,7 +3001,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList69(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList63(runtimeScene);} //End of subevents
 }
 
 }
@@ -3421,7 +3043,7 @@ gdjs.copyArray(runtimeScene.getObjects("soporte"), gdjs.sala2DCode.GDsoporteObje
 }
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList71 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList65 = function(runtimeScene) {
 
 {
 
@@ -3442,7 +3064,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList72 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList66 = function(runtimeScene) {
 
 {
 
@@ -3462,7 +3084,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList73 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList67 = function(runtimeScene) {
 
 {
 
@@ -3482,7 +3104,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList74 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList68 = function(runtimeScene) {
 
 {
 
@@ -3502,7 +3124,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList75 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList69 = function(runtimeScene) {
 
 {
 
@@ -3522,7 +3144,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), 
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.sala2DCode.localVariables);
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList76 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList70 = function(runtimeScene) {
 
 {
 
@@ -3547,7 +3169,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("conector"), gdjs.sala2DCode.GDconect
 }
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList77 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList71 = function(runtimeScene) {
 
 {
 
@@ -3573,7 +3195,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("conector2"), gdjs.sala2DCode.GDconec
 }
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList78 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList72 = function(runtimeScene) {
 
 {
 
@@ -3599,7 +3221,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("conector3"), gdjs.sala2DCode.GDconec
 }
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList79 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList73 = function(runtimeScene) {
 
 {
 
@@ -3625,7 +3247,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("conector4"), gdjs.sala2DCode.GDconec
 }
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList80 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList74 = function(runtimeScene) {
 
 {
 
@@ -3651,7 +3273,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("conector5"), gdjs.sala2DCode.GDconec
 }
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList81 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList75 = function(runtimeScene) {
 
 {
 
@@ -3668,7 +3290,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1)
 }
 
 
-};gdjs.sala2DCode.eventsList82 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList76 = function(runtimeScene) {
 
 {
 
@@ -3707,7 +3329,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList72(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList66(runtimeScene);} //End of subevents
 }
 
 }
@@ -3750,7 +3372,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList73(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList67(runtimeScene);} //End of subevents
 }
 
 }
@@ -3793,7 +3415,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList74(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList68(runtimeScene);} //End of subevents
 }
 
 }
@@ -3836,7 +3458,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList75(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList69(runtimeScene);} //End of subevents
 }
 
 }
@@ -3879,7 +3501,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList76(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList70(runtimeScene);} //End of subevents
 }
 
 }
@@ -3925,7 +3547,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList77(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList71(runtimeScene);} //End of subevents
 }
 
 }
@@ -3971,7 +3593,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList78(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList72(runtimeScene);} //End of subevents
 }
 
 }
@@ -4017,7 +3639,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList79(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList73(runtimeScene);} //End of subevents
 }
 
 }
@@ -4063,7 +3685,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList80(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList74(runtimeScene);} //End of subevents
 }
 
 }
@@ -4108,13 +3730,13 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList81(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList75(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala2DCode.eventsList83 = function(runtimeScene, asyncObjectsList) {
+};gdjs.sala2DCode.eventsList77 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -4144,10 +3766,10 @@ gdjs.copyArray(runtimeScene.getObjects("puzzle"), gdjs.sala2DCode.GDpuzzleObject
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList83(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.sala2DCode.eventsList77(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList84 = function(runtimeScene, asyncObjectsList) {
+gdjs.sala2DCode.eventsList78 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -4173,10 +3795,10 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects3
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList84(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.sala2DCode.eventsList78(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList85 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList79 = function(runtimeScene) {
 
 {
 
@@ -4207,7 +3829,7 @@ gdjs.copyArray(runtimeScene.getObjects("puzzle"), gdjs.sala2DCode.GDpuzzleObject
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setBoolean(true);
 }gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList86 = function(runtimeScene, asyncObjectsList) {
+gdjs.sala2DCode.eventsList80 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -4232,10 +3854,10 @@ gdjs.copyArray(runtimeScene.getObjects("carga"), gdjs.sala2DCode.GDcargaObjects4
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList86(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.sala2DCode.eventsList80(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList87 = function(runtimeScene, asyncObjectsList) {
+gdjs.sala2DCode.eventsList81 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -4260,10 +3882,10 @@ gdjs.copyArray(runtimeScene.getObjects("perdiste"), gdjs.sala2DCode.GDperdisteOb
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList87(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.sala2DCode.eventsList81(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.sala2DCode.localVariables.length = 0;
 }
-gdjs.sala2DCode.eventsList88 = function(runtimeScene) {
+gdjs.sala2DCode.eventsList82 = function(runtimeScene) {
 
 {
 
@@ -4279,7 +3901,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), 
 }
 
 
-};gdjs.sala2DCode.eventsList89 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList83 = function(runtimeScene) {
 
 {
 
@@ -4413,13 +4035,13 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.sala2DCode.eventsList88(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList82(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala2DCode.eventsList90 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList84 = function(runtimeScene) {
 
 {
 
@@ -5889,7 +5511,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDsoporteObjects1, gdjs.sala2DCode.GDsoporteObjec
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList85(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList79(runtimeScene);} //End of subevents
 }
 
 }
@@ -6023,7 +5645,7 @@ gdjs.copyArray(gdjs.sala2DCode.GDconector5Objects2_1final, gdjs.sala2DCode.GDcon
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.sala2DCode.eventsList89(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList83(runtimeScene);} //End of subevents
 }
 
 }
@@ -6157,7 +5779,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.sala2DCode.eventsList91 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList85 = function(runtimeScene) {
 
 {
 
@@ -6238,7 +5860,7 @@ gdjs.copyArray(runtimeScene.getObjects("soporte"), gdjs.sala2DCode.GDsoporteObje
 }{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.randomInRange(0, 6));
 }
 { //Subevents
-gdjs.sala2DCode.eventsList38(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList32(runtimeScene);} //End of subevents
 }
 
 }
@@ -6274,7 +5896,7 @@ gdjs.copyArray(runtimeScene.getObjects("formascubo2"), gdjs.sala2DCode.GDformasc
 }{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.randomInRange(0, 6));
 }
 { //Subevents
-gdjs.sala2DCode.eventsList46(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList40(runtimeScene);} //End of subevents
 }
 
 }
@@ -6310,7 +5932,7 @@ gdjs.copyArray(runtimeScene.getObjects("formascubo3"), gdjs.sala2DCode.GDformasc
 }{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.randomInRange(0, 6));
 }
 { //Subevents
-gdjs.sala2DCode.eventsList54(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList48(runtimeScene);} //End of subevents
 }
 
 }
@@ -6346,7 +5968,7 @@ gdjs.copyArray(runtimeScene.getObjects("formascubo4"), gdjs.sala2DCode.GDformasc
 }{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.randomInRange(0, 6));
 }
 { //Subevents
-gdjs.sala2DCode.eventsList62(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList56(runtimeScene);} //End of subevents
 }
 
 }
@@ -6382,7 +6004,7 @@ gdjs.copyArray(runtimeScene.getObjects("formascubo5"), gdjs.sala2DCode.GDformasc
 }{runtimeScene.getScene().getVariables().getFromIndex(1).setNumber(gdjs.randomInRange(0, 6));
 }
 { //Subevents
-gdjs.sala2DCode.eventsList70(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList64(runtimeScene);} //End of subevents
 }
 
 }
@@ -6413,7 +6035,7 @@ isConditionTrue_0 = isConditionTrue_1;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.sala2DCode.eventsList71(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList65(runtimeScene);} //End of subevents
 }
 
 }
@@ -6475,7 +6097,7 @@ gdjs.copyArray(runtimeScene.getObjects("conector5"), gdjs.sala2DCode.GDconector5
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList82(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList76(runtimeScene);} //End of subevents
 }
 
 }
@@ -6608,22 +6230,22 @@ gdjs.copyArray(runtimeScene.getObjects("soporte"), gdjs.sala2DCode.GDsoporteObje
 }
 }
 { //Subevents
-gdjs.sala2DCode.eventsList90(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList84(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.sala2DCode.eventsList92 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList86 = function(runtimeScene) {
 
 {
 
 
-gdjs.sala2DCode.eventsList91(runtimeScene);
+gdjs.sala2DCode.eventsList85(runtimeScene);
 }
 
 
-};gdjs.sala2DCode.eventsList93 = function(runtimeScene) {
+};gdjs.sala2DCode.eventsList87 = function(runtimeScene) {
 
 {
 
@@ -6792,7 +6414,7 @@ gdjs.sala2DCode.eventsList4(runtimeScene);
 {
 
 
-gdjs.sala2DCode.eventsList30(runtimeScene);
+gdjs.sala2DCode.eventsList24(runtimeScene);
 }
 
 
@@ -6805,7 +6427,7 @@ isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "puzzle");
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.sala2DCode.eventsList92(runtimeScene);} //End of subevents
+gdjs.sala2DCode.eventsList86(runtimeScene);} //End of subevents
 }
 
 }
@@ -6952,7 +6574,7 @@ gdjs.sala2DCode.GDperdisteObjects3.length = 0;
 gdjs.sala2DCode.GDperdisteObjects4.length = 0;
 gdjs.sala2DCode.GDperdisteObjects5.length = 0;
 
-gdjs.sala2DCode.eventsList93(runtimeScene);
+gdjs.sala2DCode.eventsList87(runtimeScene);
 gdjs.sala2DCode.GDsala2Objects1.length = 0;
 gdjs.sala2DCode.GDsala2Objects2.length = 0;
 gdjs.sala2DCode.GDsala2Objects3.length = 0;
